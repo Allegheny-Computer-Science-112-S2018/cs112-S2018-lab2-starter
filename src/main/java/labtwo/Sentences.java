@@ -42,21 +42,11 @@ public class Sentences {
   public Sentences(int size) {
   }
 
-  /**
-   * Adds a new sentence to the array.
-   *
-   * @param sentence The new sentence to add to the array.
-   */
   public void addSentence(Sentence sentence) {
     sentences[currentSentence] = sentence;
     currentSentence = (currentSentence + 1) % NUMBER_OF_SENTENCES;
   }
 
-  /**
-   * Returns the sentences in the array.
-   *
-   * @return the array of the sentences.
-   */
   public Sentence[] getSentences() {
     return sentences;
   }
